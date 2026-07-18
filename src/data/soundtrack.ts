@@ -1,36 +1,13 @@
+import amIDreaming from '../assets/songs/am-i-dreaming.mp3'
+import calling from '../assets/songs/calling.mp3'
+import sunflower from '../assets/songs/sunflower.mp3'
+import whatsUpDanger from '../assets/songs/whats-up-danger.mp3'
+
 export const soundtrack = [
-  {
-    id: 'sunflower',
-    title: 'Sunflower',
-    artist: 'Post Malone & Swae Lee',
-    movie: 'INTO / 2018',
-    spotifyId: '3KkXRkHbMCARz0aVfEt68P',
-    color: '#f4ef45',
-  },
-  {
-    id: 'danger',
-    title: 'What’s Up Danger',
-    artist: 'Blackway & Black Caviar',
-    movie: 'INTO / 2018',
-    spotifyId: '5AKgM7LuP2Bqz4fKd3ftjS',
-    color: '#f20d3a',
-  },
-  {
-    id: 'calling',
-    title: 'Calling',
-    artist: 'Metro Boomin, Swae Lee, NAV & A Boogie',
-    movie: 'ACROSS / 2023',
-    spotifyId: '5rurggqwwudn9clMdcchxT',
-    color: '#18d8ff',
-  },
-  {
-    id: 'dreaming',
-    title: 'Am I Dreaming',
-    artist: 'Metro Boomin, A$AP Rocky & Roisee',
-    movie: 'ACROSS / 2023',
-    spotifyId: '2pXyyI27MjnkBnp1Ms0hE9',
-    color: '#ff5ebc',
-  },
+  { id: 'sunflower', title: 'Sunflower', artist: 'Post Malone & Swae Lee', movie: 'Into / 2018', src: sunflower, color: '#f4ef45' },
+  { id: 'danger', title: 'What’s Up Danger', artist: 'Blackway & Black Caviar', movie: 'Into / 2018', src: whatsUpDanger, color: '#f20d3a' },
+  { id: 'calling', title: 'Calling', artist: 'Metro Boomin, Swae Lee, NAV & A Boogie', movie: 'Across / 2023', src: calling, color: '#18d8ff' },
+  { id: 'dreaming', title: 'Am I Dreaming', artist: 'Metro Boomin, A$AP Rocky & Roisee', movie: 'Across / 2023', src: amIDreaming, color: '#ff5ebc' },
 ] as const
 
 export type TrackId = (typeof soundtrack)[number]['id']
